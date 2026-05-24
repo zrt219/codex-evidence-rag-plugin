@@ -30,6 +30,12 @@ You can also run the module directly:
 python -m codex_evidence_rag --help
 ```
 
+If you are in an offline or locked-down Windows environment without `wheel` installed, use the legacy editable path:
+
+```powershell
+pip install -e . --no-use-pep517
+```
+
 ## CLI Commands
 
 | Command | Purpose |

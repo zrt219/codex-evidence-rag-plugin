@@ -1,0 +1,27 @@
+[project]
+name = "codex-evidence-rag"
+version = "0.1.0"
+description = "Codex-compatible local RAG evidence and resume-claim auditor."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Zhane Grey" }]
+keywords = ["codex", "rag", "evidence", "resume", "claim-audit", "context-engineering"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0,<9.0", "ruff>=0.6,<1.0"]
+
+[project.scripts]
+codex-evidence = "codex_evidence_rag.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

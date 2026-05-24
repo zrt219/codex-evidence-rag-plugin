@@ -1,5 +1,7 @@
 # Codex Evidence RAG Plugin
 
+Made by `zrt219`.
+
 Codex Evidence RAG is a local, dependency-light claim-auditing tool for AI engineering portfolios. It scans a repository, retrieves source-backed evidence, grades claim strength, and emits recruiter-safe evidence packets and Codex context packs.
 
 This is a Codex-compatible local plugin/CLI. It does not require API keys, embeddings, a vector database, or private workspace data.
